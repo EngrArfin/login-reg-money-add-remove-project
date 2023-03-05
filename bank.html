@@ -18,7 +18,7 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-green-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2  class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-yellow-300 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdrow </h4>
@@ -33,21 +33,21 @@
         <!--deposit and add balance-->
         
         <section class="mt-12">
-            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto ">
                 <div class="bg-pink-300 p-8 rounded-xl">
-                    <h4 class="text-2xl mb-4"> Please Deposit</h4>
-                    <input class="w-9/12 block mb-3 px-4" type="email" name="" id="user-email" placeholder="$ Amount you want to deposit">
-                    <button id="btn-submit" class="bg-yellow-500 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Deposit</button>
+                    <h4 class="text-2xl mb-4 text-white"> Please Deposit</h4>
+                    <input class="w-9/12 block mb-3 px-4" type="email" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" class="bg-yellow-500 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Deposit</button>
                 </div>
                 <div class="bg-orange-300 p-8 rounded-xl">
-                    <h4 class="text-2xl mb-4"> Please Withdrow </h4>
-                    <input class="w-9/12 block mb-3 px-4" type="email" name="" id="user-email" placeholder="$ Amount your withdrow money ">
+                    <h4 class="text-2xl mb-4 text-white"> Please Withdrow </h4>
+                    <input class="w-9/12 block mb-3 px-4" type="email" name="" id="user-email" placeholder="$ Amount your withdrow money">
                     <button id="btn-submit" class="bg-yellow-500 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Withdrow</button>
                 </div>
-                
             </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
     
 </body>
 </html>
