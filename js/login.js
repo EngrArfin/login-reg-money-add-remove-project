@@ -12,13 +12,13 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     //step:3 get pass
     const passwordField = document.getElementById('user-pass');
     const password = passwordField.value;
-    //console.log(email, password);
+    // Step-4 console.log(email, password);
 
     //verify email pass
     if(email === 'arfin.cse.green.edu.bd@gmail.com' && password === 'arfin'){
-        console.log('valid user')
+        window.location.href='bank.html';
     }
     else{
-        console.log('invalid user')
+        alert('wrong password')
     }
 })
