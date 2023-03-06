@@ -22,11 +22,11 @@
                 </div>
                 <div class="bg-yellow-300 p-8 rounded-xl">
                     <h4 class="text-2xl">Withdrow </h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$<span id="withdrow-total">00</span> </h2>
                 </div>
                 <div class="bg-purple-400 p-8 rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$1240</h2>
+                    <h2 class="text-5xl">$<span id="balance-total">50</span> </h2>
                 </div>
             </div>
         </section>
@@ -37,17 +37,18 @@
                 <div class="bg-pink-300 p-8 rounded-xl">
                     <h4 class="text-2xl mb-4 text-white"> Please Deposit</h4>
                     <input class="w-9/12 block mb-3 px-4" type="email" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
-                    <button id="btn-deposit" class="bg-yellow-500 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Deposit</button>
+                    <button id="btn-deposit" class="bg-red-600 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Deposit</button>
                 </div>
                 <div class="bg-orange-300 p-8 rounded-xl">
                     <h4 class="text-2xl mb-4 text-white"> Please Withdrow </h4>
-                    <input class="w-9/12 block mb-3 px-4" type="email" name="" id="user-email" placeholder="$ Amount your withdrow money">
-                    <button id="btn-submit" class="bg-yellow-500 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Withdrow</button>
+                    <input id="withdraw-field" class="w-9/12 block mb-3 px-4" type="email" name="" id="user-email" placeholder="$ Amount your withdrow money">
+                    <button id="btn-withdraw" class="bg-red-600 hover:bg-sky-700 px-8 py-2 text-white front-medium rounded-lg rounded-lg">Withdrow</button>
                 </div>
             </div>
         </section>
     </main>
     <script src="js/deposit.js"></script>
+    <script src="js/withdrow.js"></script>
     
 </body>
 </html>
